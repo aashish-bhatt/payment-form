@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paymemt form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Goblin+One&family=Itim&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&display=swap" rel="stylesheet">
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+    <form action="">
+        <h1 class="heading">Payment Form</h1>
+        <p> Required Fields are followed by *</p>
+        <h2>Contact Information</h2>
+        <div class="contact">
+        <p> Name : *<input type="text" name="name" placeholder="Enter your name" required></p>
+         <fieldset>
+             <legend>Gender :*</legend>
+             <p>
+                 Male <input type="radio" name="gender" id="male" required>
+                 Female <input type="radio" name="gender" id="female" required>
+                 Other <input type="radio" name="gender" id="other" required>
+             </p>
+         </fieldset>
+         <p> Address : *<textarea name="address" id="address" cols="50" rows="4" required></textarea></p>
+        <p>Email : <input type="email" name="email" id="email"></p>
+        <p>Pincode : *<input type="number" name="Pincode" id="Pincode" required></p>
+</div>
+        <h2>Payment information</h2>
+        <div class="payment">
+        <p> Card type : *
+            <select name="card-type" id="card-type" required>
+                <option value="" >--Select a Card Type--</option>
+                <option value="Rupay">Rupay</option>
+                <option value="Visa">Visa</option>
+                <option value="Mastercard">Mastercard</option>
+            </select>
+        </p>  
+        <p> Card-Number : *<input type="number" name="card-number" id="card-number" required></p>
+         <p>Expiry Date : *<input type="date" name="expiry-date" id="expiry-date" required></p>
+         <p> CVV : *<input type="password" name="cvv" id="cvv" required></p>
+         <button type="button" class="btn btn-primary"> Pay Now</button>
+    </div>   
+ </form></div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box ;
+}
+.container{
+background-color:lightblue;
+   margin: 50px auto;
+   padding-top: 50px;
+   padding-right: 30px;
+   padding-right: 30px;
+   padding-bottom: 50px;
+    border: 5px solid rgb(154, 141, 211);
+}
+p{
+    font-family: 'Itim', cursive;
+    color:rebeccapurple;
+}
+h2{
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    color: navy;
+}
+legend{
+    font-family: 'Itim', cursive;
+    color:rebeccapurple;
+}
+button{
+    border-radius: 30%;
+}
+.heading{
+    font-family: 'Goblin One', cursive;
+    text-align: center;
+    font-size: 3rem;
+}
+.contact{
+    margin-top: 40px;
+}
+.payment{
+    margin-top: 40px;
+}
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select,textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid purple;
+    border-radius: 5px;
+}
+ 
+fieldset{
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid purple;
+}
+.btn{
+    width: 100%;  
+}
+@media(max-width:700px) {
+    .container{
+        width: 100%;
+        margin: 0 0;
+    }
+}
+
+
